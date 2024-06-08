@@ -20,7 +20,7 @@ func MapFileContentToRunes(fileName string, fileContent string) map[rune][]strin
 		lines := strings.Split(block, "\n")
 		if len(lines) > 0 {
 			char := rune(startChar + rune(i))
-			// fmt.Println(i)
+			
 			charMap[char] = lines
 		} else {
 			log.Fatal("Worning: empty or malformed block at index ", i)
